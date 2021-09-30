@@ -44,6 +44,9 @@ namespace DefaultDocumentation
         [Option('u', nameof(IncludeUndocumentedItems), Required = false, HelpText = "If true items with no documentation will also be included")]
         public bool IncludeUndocumentedItems { get; set; }
 
+        [Option('M', nameof(UseMsLikeOutput), Required = false, HelpText = "If true, the generated output will more closely resemble the output on docs.microsoft.com")]
+        public bool UseMsLikeOutput { get; set; }
+
         [Option('i', nameof(IgnoreLineBreak), Required = false, HelpText = "If true line break in the documentation are no longer transformed as a markdown line break (two space at the end of a line)")]
         public bool IgnoreLineBreak { get; set; }
 

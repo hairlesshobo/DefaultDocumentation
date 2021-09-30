@@ -49,6 +49,7 @@
       GeneratedPages="$(DefaultDocumentationGeneratedPages)"
       GeneratedAccessModifiers="$(DefaultDocumentationGeneratedAccessModifiers)"
       IncludeUndocumentedItems="$(DefaultDocumentationIncludeUndocumentedItems)"
+      UseMsLikeOutput="$(DefaultDocumentationUseMsLikeOutput)"
       IgnoreLineBreak="$(DefaultDocumentationIgnoreLineBreak)"
       LinksOutputFilePath="$(_DefaultDocumentationLinksOutputFile)"
       LinksBaseUrl="$(DefaultDocumentationLinksBaseUrl)"

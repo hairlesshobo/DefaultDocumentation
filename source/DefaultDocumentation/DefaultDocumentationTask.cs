@@ -32,6 +32,8 @@ namespace DefaultDocumentation
 
         public bool IncludeUndocumentedItems { get; set; }
 
+        public bool UseMsLikeOutput { get; set; }
+
         public bool IgnoreLineBreak { get; set; }
 
         public string LinksOutputFilePath { get; set; }
@@ -62,6 +64,7 @@ namespace DefaultDocumentation
                 GetEnum<GeneratedPages>(nameof(GeneratedPages), GeneratedPages),
                 GetEnum<GeneratedAccessModifiers>(nameof(GeneratedAccessModifiers), GeneratedAccessModifiers),
                 IncludeUndocumentedItems,
+                UseMsLikeOutput,
                 IgnoreLineBreak,
                 LinksOutputFilePath,
                 LinksBaseUrl,

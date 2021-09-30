@@ -76,6 +76,7 @@ Here are some DefaultDocumentation specific properties you can set to configure 
   - `ProtectedInternal`: generate documentation of `protected internal` members.
   - `PrivateProtected`: generate documentation of `private protected` members.
 - `<DefaultDocumentationIncludeUndocumentedItems>`: state if types and members with no documentation should also be included in the generated documentation, false by default.
+- `<DefaultDocumentationUseMsLikeOutput>`: If true, the generated output will more closely resemble the output on docs.microsoft.com
 - `<DefaultDocumentationIgnoreLineBreak>`: state if line break in the documentation should be ignored and written as is or transformed as markdown line break (two space at the end of a line), false by default.
 - `<DefaultDocumentationLinksOutputFile>`: where to generate the links file, see [Extern links](#Links), empty by default and does not generate the links file.
 - `<DefaultDocumentationLinksBaseUrl>`: the base url to use for the links file, see [Extern links](#Links).

@@ -43,6 +43,7 @@ namespace DefaultDocumentation
         public GeneratedAccessModifiers GeneratedAccessModifiers { get; }
 
         public bool IncludeUndocumentedItems { get; }
+        public bool UseMsLikeOutput { get; }
 
         public bool IgnoreLineBreak { get; }
 
@@ -67,6 +68,7 @@ namespace DefaultDocumentation
             GeneratedPages generatedPages,
             GeneratedAccessModifiers generatedAccessModifiers,
             bool includeUndocumentedItems,
+            bool useMsLikeOutput,
             bool ignoreLineBreak,
             string linksOutputFile,
             string linksBaseUrl,
@@ -117,6 +119,9 @@ namespace DefaultDocumentation
 
             IncludeUndocumentedItems = includeUndocumentedItems;
             Logger.Info($"{nameof(IncludeUndocumentedItems)}: {IncludeUndocumentedItems}");
+
+            UseMsLikeOutput = useMsLikeOutput;
+            Logger.Info($"{nameof(UseMsLikeOutput)}: {UseMsLikeOutput}");
 
             IgnoreLineBreak = ignoreLineBreak;
             Logger.Info($"{nameof(IgnoreLineBreak)}: {IgnoreLineBreak}");

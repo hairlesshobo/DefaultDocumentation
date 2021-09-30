@@ -16,7 +16,10 @@ namespace DefaultDocumentation
 
             try
             {
-                new MarkdownWriter(settings).Execute();
+                if (settings.UseMsLikeOutput)
+                    new MsStyleMarkdownWriter(settings).Execute();
+                else
+                    new MarkdownWriter(settings).Execute();
             }
             finally
             {

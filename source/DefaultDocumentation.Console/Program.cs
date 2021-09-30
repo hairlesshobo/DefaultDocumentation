@@ -45,6 +45,7 @@ namespace DefaultDocumentation
                         GetEnum(a.GeneratedPages),
                         GetEnum(a.GeneratedAccessModifiers),
                         a.IncludeUndocumentedItems,
+                        a.UseMsLikeOutput,
                         a.IgnoreLineBreak,
                         a.LinksOutputFilePath,
                         a.LinksBaseUrl,
